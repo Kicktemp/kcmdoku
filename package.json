@@ -1,9 +1,29 @@
 {
+  "name": "kcmdocs",
+  "version": "0.0.2",
+  "private": true,
+  "description": "docs of Kick Consent Manager",
+  "keywords": [
+    "documentation",
+    "generator",
+    "vue"
+  ],
+  "homepage": "https://github.com/Kicktemp/kcmdoku#readme",
+  "bugs": {
+    "url": "https://github.com/Kicktemp/kcmdoku/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kicktemp/kcmdoku.git"
+  },
+  "license": "MIT",
+  "author": "Niels Nübel",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "1.5.2",
     "vuepress": "^1.5.2"
   }
 }
