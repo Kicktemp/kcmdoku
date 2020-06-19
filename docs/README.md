@@ -21,25 +21,6 @@ footer: GNU Licensed | Copyright © 2020 Kicktemp GmbH. All rights reserved.
   </div>
 </div>
 
-### As Easy as 1, 2, 3
-
-``` bash
-# Scaffold VuePress site
-yarn create vuepress [directoryName]
-# OR npx create-vuepress [directoryName]
-
-# Navigate to your new VuePress directory
-cd [directoryName]
-
-# Start local dev server
-yarn dev
-# OR npm run dev
-
-# Build static files
-yarn build
-# OR npm run build
-```
-
 ::: warning COMPATIBILITY NOTE
 Kick Consent Manager requires Joomla >= 3.8 and PHP >= 7.0.
 :::

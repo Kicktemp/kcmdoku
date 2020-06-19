@@ -54,37 +54,46 @@ module.exports = {
   },
   plugins: [
     ['@vuepress/back-to-top', true],
+    [
+      '@vuepress/plugin-medium-zoom',
+      {
+        selector: '.theme-default-content img',
+        delay: 500,
+        options: {
+          margin: 24,
+          background: '#009fe3',
+          scrollOffset: 0,
+        },
+      },
+    ],
   ],
   extraWatchFiles: [
     '.vuepress/nav/de.js'
-  ]
+  ],
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@alias': '/'
+      }
+    }
+  }
 }
 
 function getGuideSidebar (groupA, groupB) {
   return [
     {
       title: groupA,
-      collapsable: false,
+      collapsable: true,
       children: [
         '',
         'getting-started',
-        'directory-structure',
-        'basic-config',
-        'assets',
-        'markdown',
-        'using-vue',
-        'i18n',
-        'deploy'
-      ]
-    },
-    {
-      title: groupB,
-      collapsable: false,
-      children: [
-        'frontmatter',
-        'permalinks',
-        'markdown-slot',
-        'global-computed'
+        'options',
+        'categories',
+        'services',
+        'cookies',
+        'scripts',
+        'consents',
+        'reports'
       ]
     }
   ]
