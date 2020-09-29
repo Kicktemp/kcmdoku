@@ -23,8 +23,8 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "1.5.2",
-    "@vuepress/plugin-medium-zoom": "^1.5.2",
-    "vuepress": "^1.5.2"
+    "@vuepress/plugin-back-to-top": "1.6.0",
+    "@vuepress/plugin-medium-zoom": "^1.6.0",
+    "vuepress": "^1.6.0"
   }
 }
